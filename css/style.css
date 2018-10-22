@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC|Rochester');
+/*
+    Brown: #69260b
+    Teal: #79a999
+    yellow: #f0dfa7
+*/
+
+/* ---------------- General */
+* {
+    transition-duration: .5s;
+}
+html {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Alegreya SC', serif;
+}
+span.cursive {
+    font-family: 'Rochester', cursive;
+}
+
+/* ---------------- Navigation */
+nav {
+    background-color:#69260b;
+}
+nav a {
+    color: white;
+}
+nav a:hover {
+    color: #f0dfa7;
+}
+
+/* ---------------- Header/Title Section */
+header section {
+    margin-top: 56px;
+    height: 40vh;
+}
+header section [class*="col"]{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+header section img {
+    max-width: 290px;
+}
+h1 {
+    font-size: 3.5rem;
+    max-width: 610px;
+}
+h1 span {
+    font-size: 2rem;
+}
