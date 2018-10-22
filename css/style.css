@@ -18,13 +18,17 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Alegreya SC', serif;
 }
-span.cursive {
+.cursive {
     font-family: 'Rochester', cursive;
 }
 
 /* ---------------- Navigation */
 nav {
-    background-color:#69260b;
+    background-color: #1b0802
+}
+.navbar-brand span {
+    font-family: 'Alegreya SC', serif;
+    font-size: 1.6rem;
 }
 nav a {
     color: white;
@@ -34,22 +38,92 @@ nav a:hover {
 }
 
 /* ---------------- Header/Title Section */
+header {
+    background-image: linear-gradient(#7fc1ec, white);
+}
 header section {
-    margin-top: 56px;
-    height: 40vh;
+    /* margin-top: 56px; */
+    height: 90vh;
 }
 header section [class*="col"]{
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 header section img {
     max-width: 290px;
+    transform: translate(0, -15px);
 }
 h1 {
+    display: inline-block;
+    letter-spacing: 3px;
+    /* width: 90%; */
+    color: #1b0802;
     font-size: 3.5rem;
     max-width: 610px;
+    border: 1px solid rgb(27, 8, 2);
 }
-h1 span {
+h1 span, header p {
     font-size: 2rem;
+}
+header p {
+    letter-spacing: 3px;
+}
+.floating {  
+    animation-name: floating;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    50% { transform: translate(0, -30px); }
+    to { transform: translate(0, -0px); }    
+}
+
+/* ---------------- Buy Now Section */
+#buy-now {
+    background-color: #fff2c2;
+}
+#buy-now h2 {
+    position: relative;
+}
+#buy-now h2::after {
+    display: inline-block;
+    content: "";
+    background-color: #79a999;
+    height: 2px;
+    width: 70px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#buy-now img {
+    box-shadow: 3px 5px 40px 1px rgba(27, 8, 2, 0.7);
+}
+.buy-form p {
+    font-size: 1.5rem;
+}
+.price {
+    font-family: 'Alegreya SC', serif;
+    font-size: 2.5rem;
+    color: #5b9280;
+}
+.form-group {
+    margin-bottom: 3px;
+}
+form button.btn {
+    background-color: #69260b;
+    color: white;
+    font-family: 'Alegreya SC', serif;
+    font-size: 1.5rem;
+    max-width: 200px;
+}
+form button:hover {
+    background-color: #79a999;
 }
