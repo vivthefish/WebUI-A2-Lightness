@@ -91,8 +91,11 @@ header p {
 }
 #buy-now h2 {
     position: relative;
+    font-weight: 600;
+    color: #aa7560;
+    letter-spacing: 1px;
 }
-#buy-now h2::after {
+h2.underline::after {
     display: inline-block;
     content: "";
     background-color: #79a999;
@@ -117,13 +120,49 @@ header p {
 .form-group {
     margin-bottom: 3px;
 }
-form button.btn {
+button.btn {
     background-color: #69260b;
     color: white;
     font-family: 'Alegreya SC', serif;
     font-size: 1.5rem;
     max-width: 200px;
 }
-form button:hover {
+button:hover {
     background-color: #79a999;
+}
+
+/* ---------------- Quotes Section */
+#quotes {
+    font-family: 'Rochester', cursive;
+    font-size: 3rem;
+    color: #1b0802;
+    text-align: center;
+    background-color: #97c5b6;
+    background-image: url("../images/tiles-dark.png");
+    min-height: 300px;
+}
+blockquote {
+    margin-bottom: 0;
+}
+.carousel-item {
+    padding-bottom: 30px;
+}
+.quote-mark {
+    color: #b9e6d6;
+    font-size: 10rem;
+    line-height: 0;
+    position: relative;
+    top: 70px;
+}
+
+/* ---------------- Author Aside */
+aside [class*="col"]:first-child {
+    background-image: url('../images/Milan_Kundera.jpg');
+    background-size: cover;
+    background-position: center;
+}
+aside h2.underline::after {
+    left: 0;
+    transform: none;
+    bottom: 0;
 }
