@@ -21,6 +21,14 @@ h1, h2, h3, h4, h5, h6 {
 .cursive {
     font-family: 'Rochester', cursive;
 }
+a {
+    color: #79a999;
+    text-decoration: none;
+}
+a:hover {
+    color: #ff9b6d;
+    text-decoration: none;
+}
 
 /* ---------------- Navigation */
 nav {
@@ -266,5 +274,54 @@ aside h2.underline::after {
     align-items: center;
     text-align: center;
     color: #69260b;
+    text-decoration: none;
+}
+
+/* ---------------- FAQ and Publisher Section */
+#faq-pub {
+    background-color: #69260b;
+    background-image: url('../images/tiles-dark.png');
+}
+#faq-pub .row > [class*="col"] {
+    background-color: #b49386;
+    padding: 20px 0 0 0;
+    border-radius: 5px;
+}
+#faq-pub h2::after {
+    background-color: #97c5b6;
+}
+#faq .card {
+    border: none;
+    border-radius: 0;
+}
+#faq header {
+    background-image: none;
+    background-color: #f0dfa7;
+    border-bottom: 1px solid #69260b;
+}
+#faq header:hover {
+    cursor: pointer;
+    background-color: #fff2c2;
+}
+.pub-info a {
+    color: #b9e6d6;
+    text-decoration: none;
+}
+.pub-info p {
+    margin-bottom: 2px;
+}
+
+/* ---------------- Footer */
+footer {
+    background-color: #1b0802;
+    color: #f0dfa7;
+    text-align: center;
+}
+footer a {
+    color: #97c5b6;
+    text-decoration: none;
+}
+footer a:hover {
+    color: white;
     text-decoration: none;
 }
