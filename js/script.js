@@ -2,7 +2,28 @@ $('.carousel').carousel({
     interval: 10000
   });
 
-  // SNOW
+// Tabs Section -----------------------
+
+$('#tabs .nav-item:first-child .nav-link').click(function(e) {
+    $('#tabs .collapse').removeClass('show');
+    $('#tabs .collapse:first-child').addClass('show');
+    $('#tabs .nav-link').removeClass('active');
+    $('#tabs .nav-item:first-child .nav-link').addClass('active');
+});
+$('#tabs .nav-item:nth-child(2) .nav-link').click(function(e) {
+    $('#tabs .collapse').removeClass('show');
+    $('#tabs .collapse:nth-child(2)').addClass('show');
+    $('#tabs .nav-link').removeClass('active');
+    $('#tabs .nav-item:nth-child(2) .nav-link').addClass('active');
+});
+$('#tabs .nav-item:last-child .nav-link').click(function(e) {
+    $('#tabs .collapse').removeClass('show');
+    $('#tabs .collapse:last-child').addClass('show');
+    $('#tabs .nav-link').removeClass('active');
+    $('#tabs .nav-item:last-child .nav-link').addClass('active');
+});
+
+  // SNOW -----------------------------
   var Snowflake = (function() {
 
     var flakes;
