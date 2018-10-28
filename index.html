@@ -12,9 +12,11 @@
 <body>
     <header id="snow">
         <!--Nav bar-->
-        <nav class="navbar fixed-top navbar-expand-md">
-            <a href="" class="navbar-brand"><i class="fas fa-feather-alt"></i> <span>Albatross Books</span></a>
-            <button type="button" class="navbar-toggler" data-target="#mainNav" data-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
+        <nav class="navbar fixed-top navbar-expand-sm">
+            <div class="nav-perm px-3 py-2 p-sm-0">
+                <a href="" class="navbar-brand"><i class="fas fa-feather-alt"></i> <span>Albatross Books</span></a>
+                <button type="button" class="navbar-toggler" data-target="#mainNav" data-toggle="collapse"><i class="fas fa-bars"></i></button>
+            </div>
             <div id="mainNav" class="navbar-collapse collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="">Home</a></li>
@@ -26,11 +28,11 @@
         </nav>
         <!--Header section-->
         <section class="py-4 container">
-            <div class="row h-100">
-                <div class="col-4">
+            <div class="row">
+                <div class="col-md-4">
                     <img src="images/hat.png" alt="Bowler hat" class="img-fluid floating" />
                 </div>
-                <div class="col px-5 flex-column">
+                <div class="col-md px-5 flex-column">
                     <h1 class="text-center py-3 px-3"><span class="cursive">The</span> Unbearable Lightness <span class="cursive">of</span> Being</h1>
                     <p class="cursive pl-4">a novel</p>
                 </div>
@@ -42,7 +44,7 @@
         <section id="buy-now" class="py-5">
             <div class="container py-5">
                 <div class="row">
-                    <div class="col-8 px-5 buy-form">
+                    <div class="col-sm-8 px-5 buy-form">
                         <h2 class="underline mb-3 text-center">Milan Kundera's Classic Tale <span class="cursive">of</span> Two Women, Two Men <span class="cursive">and a</span> Dog <span class="cursive">in</span> 1968, Prague.</h2>
                         <p>Get our Exclusive offer now: <span class="price">$15.99</span></p>
                         <form>
@@ -73,7 +75,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col d-flex align-items-center justify-content-center">
+                    <div class="col-sm d-flex align-items-center justify-content-center mt-4 mt-sm-0">
                         <img src="images/cover.jpg" alt="Book Cover - The Unbearable Lightness of Being" class="img-fluid"/>
                     </div>
                 </div>
@@ -83,13 +85,6 @@
         <section id="quotes" class="py-5 d-flex align-items-center">
             <div class="container h-100">
                 <div id="quotes-carousel" class="carousel slide" data-ride="carousel">
-                    <!-- <ol class="carousel-indicators">
-                        <li data-target="#quotes-carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#quotes-carousel" data-slide-to="1"></li>
-                        <li data-target="#quotes-carousel" data-slide-to="2"></li>
-                        <li data-target="#quotes-carousel" data-slide-to="3"></li>
-                        <li data-target="#quotes-carousel" data-slide-to="4"></li>
-                    </ol> -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <blockquote><span class="quote-mark">&ldquo;</span> When the heart speaks, the mind finds it indecent to object.<span class="quote-mark">&rdquo;</span></blockquote>
@@ -114,10 +109,10 @@
         <aside>
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-sm">
                         <img src="images/Milan_Kundera.jpg" alt="Photograph of author Milan Kundera" class="img-fluid sr-only" />
                     </div>
-                    <div class="col py-5 pl-4">
+                    <div class="col-sm py-5 pl-4">
                         <h2 class="underline position-relative pb-2 mb-2">About Milan Kundera</h2>
                         <p>Born April 1, 1929, Brno, Czechoslovakia (now in Czech Republic), Milan is a Czech novelist, short-story writer, playwright, essayist, and poet whose works combine comedy with political criticism and philosophical speculation.</p>
                         <p class=""><small>- From <a href="https://www.britannica.com/biography/Milan-Kundera">Britannica.com</a></small></p>
@@ -174,7 +169,7 @@
         <section id="faq-pub" class="py-5">
             <div class="container">
                 <div class="row justify-content-around">
-                    <div class="col-5">
+                    <div class="col-md-5">
                         <h2 class="text-center underline position-relative mb-5">Frequently Asked Questions</h2>
                         <div id="faq" role="tablist">
                             <section class="card">
@@ -229,7 +224,7 @@
                             </section>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-md-5">
                         <h2 class="text-center underline position-relative mb-5">Harper Collins Publishers</h2>
                         <div class="pub-info px-5 pb-3">
                             <p>Perenniel Modern Classics Edition</p>

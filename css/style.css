@@ -32,7 +32,7 @@ a:hover {
 
 /* ---------------- Navigation */
 nav {
-    background-color: #1b0802
+    background-color: #1b0802;
 }
 .navbar-brand span {
     font-family: 'Alegreya SC', serif;
@@ -44,6 +44,35 @@ nav a {
 nav a:hover {
     color: #f0dfa7;
 }
+header nav button {
+    color: white;
+    opacity: 1;
+}
+@media (max-width: 568px) {
+    nav {
+        background-color: transparent;
+        padding: 0!important;
+    }
+    .nav-perm {
+        background-color: #1b0802;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #mainNav {
+        background-image: linear-gradient( to right, rgba(27,8,2,0) 60%, rgba(27, 8, 2, 1) 40%);
+        text-align: right;
+        padding-right: 1.5rem;
+    }
+    #mainNav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    #mainNav li {
+        width: 40%;
+    }
+}
 
 /* ---------------- Header/Title Section */
 header {
@@ -52,6 +81,9 @@ header {
 header section {
     /* margin-top: 56px; */
     height: 90vh;
+}
+header section .row {
+    height: 100%;
 }
 header section [class*="col"]{
     height: 100%;
@@ -92,6 +124,20 @@ header p {
     from { transform: translate(0,  0px); }
     50% { transform: translate(0, -30px); }
     to { transform: translate(0, -0px); }    
+}
+@media (max-width: 768px) {
+    header img {
+        max-width: 210px !important;
+        position: relative;
+        top: -30px;
+    }
+    header section .row {
+        height: auto;
+        margin-top: 35%;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
 }
 
 /* ---------------- Buy Now Section */
@@ -163,6 +209,11 @@ blockquote {
     position: relative;
     top: 70px;
 }
+@media (max-width: 568px) {
+    #quotes {
+        font-size: 2.5rem;
+    }
+}
 
 /* ---------------- Author Aside */
 aside [class*="col"]:first-child {
@@ -174,6 +225,11 @@ aside h2.underline::after {
     left: 0;
     transform: none;
     bottom: 0;
+}
+@media (max-width: 568px) {
+    aside [class*="col"]:first-child {
+        min-height: 250px;
+    }
 }
 
 /* ---------------- Header "Snow" */
@@ -275,6 +331,17 @@ aside h2.underline::after {
     text-align: center;
     color: #69260b;
     text-decoration: none;
+}
+@media (max-width: 768px) {
+    #tabs .nav-link {
+        font-size: 1.2rem;
+        margin-right: 2px;
+    }
+}
+@media (max-width: 568px) {
+    #tabs .nav-link {
+        font-size: 0.8rem;
+    }
 }
 
 /* ---------------- FAQ and Publisher Section */
