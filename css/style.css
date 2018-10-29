@@ -1,5 +1,17 @@
+/* Fonts - Embedded copies as backup and online versions for most up-to-date rendering */
+@font-face {
+    font-family: 'Alegreya SC';
+    src: url('../fonts/alegreyasc-regular-webfont.woff2'),
+         url('../fonts/alegreyasc-regular-webfont.woff');
+}
+@font-face {
+    font-family: 'Rochester';
+    src: url('../fonts/rochester-regular-webfont.woff2'),
+         url('../fonts/rochester-regular-webfont.woff');
+}
 @import url('https://fonts.googleapis.com/css?family=Alegreya+SC|Rochester');
-/*
+
+/* Colour Pallete:
     Brown: #69260b
     Teal: #79a999
     yellow: #f0dfa7
